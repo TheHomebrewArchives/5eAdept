@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Classes | Adrovia</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <link href="../css/classes.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Favicon/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="titleDesc">
+      <h2>Classes</h2>
+      <p><i>A reference to all classes and subclasses in 5e: Adept</i></p>
+    </div>
+
+    <div class="menu" id="menu">
+    </div>
+
+    <div class="flexBoxContainer">
+
+      <div class="classInfo">
+        <div class="classTitleName">
+          <table style="table{border-collapse: collapse;box-shadow: 4px 4px 8px rgb(22, 22, 22)}table th, td{text-align: center}table tr{padding: 0px}td{padding: 4px}table th{font-size: 14px;background-color: rgb(26, 26, 26);border-top: 4px solid rgb(16, 16, 16);padding: 8px}table .tableName{font-size: 14px;background-color: rgb(24, 24, 24)}tr:nth-child(even){background-color: rgb(38, 38, 38)}tr:nth-child(odd){background-color: rgb(32, 32, 32)}">
+            <th><span><h1 id="classTitleName">Barbarian</h1></span></th>
+          </table>
+          <div class="classDropdown">
+            <table style="table{border-collapse: collapse;box-shadow: 4px 4px 8px rgb(22, 22, 22)}table th, td{text-align: center}table tr{padding: 0px}td{padding: 4px}table th{font-size: 14px;background-color: rgb(26, 26, 26);border-top: 4px solid rgb(16, 16, 16);padding: 8px}table .tableName{font-size: 14px;background-color: rgb(24, 24, 24)}tr:nth-child(even){background-color: rgb(38, 38, 38)}tr:nth-child(odd){background-color: rgb(32, 32, 32)}">
+              <tr>
+                <td onclick="classDisplay(0)" href="#Barbarian">Barbarian</td>
+                <td onclick="classDisplay(1)" href="#Bard">Bard</td>
+                <td onclick="classDisplay(2)" href="#Cleric">Cleric</td>
+                <td onclick="classDisplay(3)" href="#Druid">Druid</td>
+                <td onclick="classDisplay(4)" href="#Fighter">Fighter</td>
+                <td onclick="classDisplay(5)" href="#Monk">Monk</td>
+                <td onclick="classDisplay(6)" href="#Paladin">Paladin</td>
+                <td onclick="classDisplay(7)" href="#Ranger">Ranger</td>
+                <td onclick="classDisplay(8)" href="#Rogue">Rogue</td>
+                <td onclick="classDisplay(9)" href="#Sorcerer">Sorcerer</td>
+                <td onclick="classDisplay(10)" href="#Warlock">Warlock</td>
+                <td onclick="classDisplay(11)" href="#Wizard">Wizard</td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+        <table id="classTable" style="table{border-collapse: collapse;box-shadow: 4px 4px 8px rgb(22, 22, 22)}table th, td{text-align: center}table tr{padding: 0px}td{padding: 4px}table th{font-size: 14px;background-color: rgb(26, 26, 26);border-top: 4px solid rgb(16, 16, 16);padding: 8px}table .tableName{font-size: 14px;background-color: rgb(24, 24, 24)}tr:nth-child(even){background-color: rgb(38, 38, 38)}tr:nth-child(odd){background-color: rgb(32, 32, 32)}">
+          <colgroup>
+            <col style="width:10%;">
+            <col style="width:10%;">
+            <col style="width:38%;">
+            <col style="width:8%;">
+          </colgroup>
+          <tr>
+            <th colspan="4"></th>
+            <th colspan="9"><i>Spell Slots per Spell Level</i></th>
+          </tr>
+          <tr>
+            <th>Level</th>
+            <th>Proficiency Bonus</th>
+            <th>Features</th>
+            <th>Cantrips Known</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>4th</th>
+            <th>5th</th>
+            <th>6th</th>
+            <th>7th</th>
+            <th>8th</th>
+            <th>9th</th>
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>+2</td>
+            <td><a href="#Spellcasting">Spellcasting</a>, <a href="#DivineDomain">Divine Domain</a></td>
+            <td>2</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>+2</td>
+            <td><a href="#ChannelDivinity1">Channel Divinity (1/Long Rest)</a>, <a href="#DivineDomainFeature1">Divine Domain Feature</a></td>
+            <td>2</td>
+            <td>3</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>+2</td>
+            <td>—</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>4th</td>
+            <td>+2</td>
+            <td>—</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>+3</td>
+            <td><a href="#Ideology1">Ideology</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>6th</td>
+            <td>+3</td>
+            <td><a href="#ChannelDivinity2">Channel Divinity (2/Long Rest)</a>, <a href="#DivineDomainFeature2">Divine Domain Feature</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td>+3</td>
+            <td>—</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>8th</td>
+            <td>+3</td>
+            <td><a href="#DivineDomainFeature3">Divine Domain Feature</a>, <a href="#Ideology2">Ideology</a></td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>+4</td>
+            <td>—</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td>+4</td>
+            <td><a href="#DivineIntervention">Divine Intervention</a></td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>11th</td>
+            <td>+4</td>
+            <td><a href="#Ideology3">Ideology</a></td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>+4</td>
+            <td>—</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>+5</td>
+            <td>—</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>14th</td>
+            <td>+5</td>
+            <td><a href="#Ideology4">Ideology</a></td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>15th</td>
+            <td>+5</td>
+            <td>—</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>16th</td>
+            <td>+5</td>
+            <td>—</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>+6</td>
+            <td><a href="#Ideology5">Ideology</a>, <a href="#DivineDomainFeature4">Divine Domain Feature</a></td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>18th</td>
+            <td>+6</td>
+            <td><a href="#ChannelDivinity3">Channel Divinity (3/Long Rest)</a></td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>19th</td>
+            <td>+6</td>
+            <td>—</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>20th</td>
+            <td>+6</td>
+            <td><a href="#DivineInterventionImprovement">Divine Intervention Improvement</a></td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <div class="subclassListContainer">
+          <table id="subclassList" style="table{border-collapse: collapse;box-shadow: 4px 4px 8px rgb(22, 22, 22)}table th, td{text-align: center}table tr{padding: 0px}td{padding: 4px}table th{font-size: 14px;background-color: rgb(26, 26, 26);border-top: 4px solid rgb(16, 16, 16);padding: 8px}table .tableName{font-size: 14px;background-color: rgb(24, 24, 24)}tr:nth-child(even){background-color: rgb(38, 38, 38)}tr:nth-child(odd){background-color: rgb(32, 32, 32)}">
+
+          </table>
+          <div class="basicInfo">
+            <h3>Hit Points</h3>
+            <hr>
+            <p><strong>Hit Dice:</strong> d<span id="hitDie"></span></p>
+            <p><strong>Hit Points per Level:</strong> <span id="hpPerLvl"></span></p>
+            <h3>Multiclassing</h3>
+            <hr>
+            <p><strong>Ability Score Minimum:</strong> <span id="scoreMinimum"></span></p>
+            <p><strong>Other Requirements:</strong> <span id="otherRequirement"></span></p>
+          </div>
+        </div>
+
+        <div id="lvl1">
+
+        </div>
+        <div id="lvl2">
+
+        </div>
+        <div id="lvl3">
+
+        </div>
+        <div id="lvl4">
+
+        </div>
+        <div id="lvl5">
+
+        </div>
+        <div id="lvl6">
+
+        </div>
+        <div id="lvl7">
+
+        </div>
+        <div id="lvl8">
+
+        </div>
+        <div id="lvl9">
+
+        </div>
+        <div id="lvl10">
+
+        </div>
+        <div id="lvl11">
+          <h2 id=''></h2>
+          <hr>
+          <p></p>
+        </div>
+        <div id="lvl12">
+
+        </div>
+        <div id="lvl13">
+
+        </div>
+        <div id="lvl14">
+          <h2 id=''></h2>
+          <hr>
+          <p></p>
+        </div>
+        <div id="lvl15">
+
+        </div>
+        <div id="lvl16">
+
+        </div>
+        <div id="lvl17">
+          <h2 id=''></h2>
+          <hr>
+          <p></p>
+          <h2 id=''></h2>
+          <hr>
+          <p></p>
+        </div>
+        <div id="lvl18">
+          <h2 id=''></h2>
+          <hr>
+          <p></p>
+        </div>
+        <div id="lvl19">
+
+        </div>
+        <div id="lvl20">
+          <h2 id=''></h2>
+          <hr>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/classes.js"></script>
+    <script src="../js/classArray.js"></script>
+    <script src="../js/subclassArray.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

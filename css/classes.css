@@ -1,0 +1,125 @@
+.flexBoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.classTitleName {
+  width: 100%;
+  align-content: center;
+  padding-bottom: 10px;
+}
+
+.classTitleName h1::after:hover {
+  cursor: pointer;
+}
+
+.classDropdown {
+  display: none;
+  z-index: 1;
+  width: 100%;
+}
+
+.classTitleName table {
+  position: relative;
+  width: 100%;
+  align-self: right;
+}
+
+.classDropdown table td:hover {
+  background-color: rgb(28, 28, 28);
+  cursor: pointer;
+}
+
+.classTitleName:hover .classDropdown {
+  display: inline-block;
+}
+
+.classInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(27, 27, 27);
+  height: 100%;
+  width: 100%;
+}
+
+.classInfo a {
+  color: rgb(247, 150, 165);
+  text-decoration: none;
+}
+
+.classInfo a:hover {
+  color: rgb(182, 108, 108);
+  text-decoration: underline;
+}
+
+.classInfo li {
+  padding: 5px;
+  font-size: 14px;
+
+}
+
+.classInfo span {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+
+.classInfo .basicInfo {
+  width: 100%;
+}
+
+.basicInfo p, .basicInfo h3 {
+  padding-left: 10px;
+  padding-right: 2px;
+}
+
+.classInfo .basicInfo hr {
+  margin-left: 10px;
+  margin-right: 2px;
+}
+
+.subclassListContainer {
+  width: 24%;
+  height: 20%;
+  margin-left: 1%;
+  align-self: right;
+}
+
+.subclassListContainer #subclassList {
+  height: 100%;
+  width: 100%;
+}
+
+.subclassListContainer #subclassList td {
+  font-size: 12px;
+}
+
+#classTable {
+  align-self: left;
+  width: 75%;
+}
+
+#classTable th {
+  padding: 1%;
+  font-size: 14px;
+}
+
+#classTable td {
+  font-size: 12px;
+  padding: 2px;
+}
+
+#lvl1, #lvl2, #lvl3, #lvl4, #lvl5, #lvl6, #lvl7, #lvl8, #lvl9, #lvl10, #lvl11, #lvl12, #lvl13, #lvl14, #lvl15, #lvl16, #lvl17, #lvl18, #lvl19, #lvl20 {
+  width: 100%;
+}
+
+#lvl1, #lvl2, #lvl3, #lvl4, #lvl5, #lvl6, #lvl7, #lvl8, #lvl9, #lvl10, #lvl11, #lvl12, #lvl13, #lvl14, #lvl15, #lvl16, #lvl17, #lvl18, #lvl19, #lvl20 h2 {
+  font-size: 20px;
+}
+
+#lvl1, #lvl2, #lvl3, #lvl4, #lvl5, #lvl6, #lvl7, #lvl8, #lvl9, #lvl10, #lvl11, #lvl12, #lvl13, #lvl14, #lvl15, #lvl16, #lvl17, #lvl18, #lvl19, #lvl20 p, li {
+  font-size: 14px;
+}

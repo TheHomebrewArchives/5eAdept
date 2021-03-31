@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Boons | Adrovia</title>
+    <link href="../css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="../css/lists.css" rel="stylesheet" type="text/css" />
+    <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Favicon/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="titleDesc">
+      <h2>Boons</h2>
+      <p><i>Search with the filters by typing in the boxes below. Click on a boon name to see its description. <a onclick="document.getElementById('boonInfo').style.display = 'block';" href="#">How do boons work?</a></i></p>
+    </div>
+
+    <div class="menu" id="menu">
+    </div>
+
+    <div class="boons" style="display:none;" id="boonInfo">
+      <p><a href="#" onclick="document.getElementById('boonInfo').style.display = 'none'"><i>Click here to close.</i></a></p>
+      <p>To have your character grow in power outside of your class abilities, you must take boons. Boons are special abilities or otherwise increases in power that you are able to acquire using boon points. You gain boon points both from your culture, and Boon Points column of your class table. You can spend boon points when you gain a level, during character creation, or extensive portions of downtime.</p>
+      <p>Any boons that are given by a class feature or culture do not need to have their prerequisites met.</p>
+      <h2>Types of Boons</h2>
+      <h3>General Boons</h3>
+      <p>Some boons are general, meaning that no special rules govern them as a group.</p>
+      <h3>Combat Boons</h3>
+      <p>Combat boons allow for you to perform feats in combat, and can be taken with the bonus boon points gained by the fighter.</p>
+      <h3>Critical Boons</h3>
+      <p>Critical Boons are Combat Boons that allow you to make your critical hits more devastating. You can only apply the effects of one Critical Boon to a single hit, unless you possess the <a onclick='boonDisplay(73)' href='#'>Critical Mastery</a> boon.</p>
+      <h3>Spellcasting Boons</h3>
+      <p>Spellcasting boons allow for more powerful and flexible magic, and can be taken with the bonus boon points gained by the sorcerer.</p>
+      <h3>Metamagic Boons</h3>
+      <p>Metamagic Boons are Spellcasting Boons that allow you to augment the effects of your spells. Any spellcaster can take them. You may only apply the effects of one Metamagic Boon to a given spell, unless you possess the <a onclick='boonDisplay(131)' href='#'>Metamagic Mastery</a> boon</p>
+      <h3>Culture Boons</h3>
+      <p>Culture boons affect special abilities granted to you by your culture. They may only be taken during character creation.</p>
+      <h3>Class Boons</h3>
+      <p>Class boons augment class features. You can have a maximum number of boon points allocated to Class Boons equal to your proficiency bonus + 1. You can exchange up to one Class Boon for boon points when you level up.</p>
+      <p>You can find each class' Class Boons on each of their individual pages.</p>
+    </div>
+
+    <div class="search">
+      <input type="text" id="myInput1" onkeyup="search(0)" placeholder="Search by name.." style="width:18%">
+      <input type="text" id="myInput2" onkeyup="search(1)" placeholder="Search by cost.." style="width:8%">
+      <input type="text" id="myInput3" onkeyup="search(2)" placeholder="Search by type.." style="width:12.5%">
+      <input type="text" id="myInput4" onkeyup="search(3)" placeholder="Search by prerequisites..">
+    </div>
+
+    <div class="selection">
+      <table>
+        <caption>Barbarian Class Boons</caption>
+        <colgroup>
+          <col style="width:20%;">
+          <col style="width:10%;">
+          <col style="width:15%;">
+          <col style="text-align: justify; a {display:inline-block;}">
+          <col class="endCol" style="display:none; width: 0;">
+        </colgroup>
+        <tr>
+          <th onclick="sortTable(4)">Name</th>
+          <th onclick="sortTable(1)">Cost</th>
+          <th onclick="sortTable(2)">Type</th>
+          <th onclick="sortTable(3)">Prerequisites</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="selection" id="boonsList">
+
+      <table id="myTable">
+
+        <colgroup>
+          <col style="width:20%;">
+          <col style="width:10%;">
+          <col style="width:15%;">
+          <col style="text-align: justify; a {display:inline-block;}">
+          <col style="display:none; width: 0;">
+        </colgroup>
+        <tr></tr>
+      </table>
+    </div>
+    <div class="boons">
+      <h2 id="boonDisplayName">Loading... this may take some time...</h2>
+      <h3 id="boonDisplayType">Loading...</h3>
+      <p id="boonCost">Loading...</p>
+      <p id="boonDisplayPrerequisite">Loading...</p>
+      <p id="boonDisplayDescription" class="boonDisplayDescription">Loading...</p>
+    </div>
+    <script src="../js/boons.js"></script>
+    <script src="../js/boonArray.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

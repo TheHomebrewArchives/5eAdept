@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(17, 16, 17);
+  font-family: 'Georgia', Times, serif;
+  color: rgb(243, 232, 243);
+}
+
+p, li {
+  line-height: 24px;
+  font-size: 14px;
+  margin: 4px 2px;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 10px 2px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 8px 2px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 6px 2px;
+}
+
+hr {
+  margin: 0px 20px;
+}
+
+p, h1, h2, h3, h4, li, caption {
+  padding: 6px 20px;
+}
+
+.info {
+  display: block;
+  text-align: justify;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  background-color: rgb(27, 27, 27);
+  height: 100%;
+}
+
+.info table {
+  margin: 16px 22px;
+}
+
+.info p {
+  font-size: 16px;
+}
+
+.info a {
+  color: rgb(247, 150, 165);
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: rgb(182, 108, 108);
+  text-decoration: underline;
+}
+
+.info li {
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 4px 4px 8px rgb(22, 22, 22);
+}
+
+table th, td {
+  text-align: center;
+}
+
+table tr {
+  padding: 0px;
+  line-height: 20px;
+}
+
+td {
+  padding: 4px;
+}
+
+table th {
+  font-size: 14px;
+  background-color: rgb(26, 26, 26);
+  border-top: 4px solid rgb(16, 16, 16);
+  padding: 8px;
+}
+
+table .tableName {
+  font-size: 14px;
+  background-color: rgb(24, 24, 24);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(38, 38, 38);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(32, 32, 32);
+}

@@ -1,0 +1,115 @@
+body {
+  background-color: rgb(17, 16, 17);
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(243, 232, 243)
+}
+
+.selection {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(37, 37, 37);
+  overflow-y: scroll;
+}
+
+
+.selection table {
+  width: 100%;
+}
+
+.selection table .boonDisplayLink {
+  display: block;
+  text-decoration: none;
+  color: rgb(221, 208, 247);
+}
+
+.selection table td {
+  font-size: 12px;
+}
+
+.selection table .boonDisplayLink:hover {
+  color: rgb(165, 144, 208);
+  cursor: alias;
+}
+
+.selection a {
+  color: rgb(247, 150, 165);
+  text-decoration: none;
+}
+
+.selection a:hover {
+  color: rgb(182, 108, 108);
+  text-decoration: underline;
+}
+
+.boons a {
+  color: rgb(247, 150, 165);
+  text-decoration: none;
+}
+
+.boons a:hover {
+  color: rgb(182, 108, 108);
+  text-decoration: underline;
+}
+
+.selection table th:hover {
+  cursor: s-resize;
+}
+
+#boonsList {
+  resize: vertical;
+  max-height: 400px;
+  min-height: 100px;
+  height: 200px;
+}
+
+.GeneralBoon {
+  color: rgb(92, 132, 243);
+}
+
+.CombatBoon {
+  color: rgb(224, 109, 109);
+}
+
+.CriticalBoon {
+  color: rgb(223, 64, 35);
+}
+
+.SpellcastingBoon {
+  color: rgb(231, 121, 231);
+}
+
+.MetamagicBoon {
+  color: rgb(204, 70, 204);
+}
+
+.ClassBoon {
+  color: rgb(137, 240, 137);
+}
+
+.CultureBoon{
+  color: rgb(165, 216, 212);
+}
+
+.search {
+  display: block;
+  background-color: rgb(44, 44, 44);
+}
+
+.search input {
+  background-color: rgb(44, 44, 44);
+  border: none;
+  color: whitesmoke;
+  margin-right: 10px;
+  padding: 8px;
+  position: sticky;
+  display: inline;
+}
+
+.search input:focus {
+  border: none;
+  outline: none;
+}
+
+.boonDisplayDescription a {
+  display: inline;
+}

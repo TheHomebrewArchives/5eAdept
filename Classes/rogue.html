@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rogue | Adrovia</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/menu.css" rel="stylesheet" type="text/css">
+    <link href="../css/classes.css" rel="stylesheet" type="text/css">
+    <link href="../css/lists.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Favicon/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="titleDesc">
+      <h2>Rogue</h2>
+      <p><i>A reference for the rogue class in 5e: Adept.</i></p>
+    </div>
+
+    <div class="menu" id="menu">
+    </div>
+
+    <div class="flexBoxContainer">
+
+      <div class="classInfo">
+        <div class="classTitleName">
+          <table style="table{border-collapse: collapse;box-shadow: 4px 4px 8px rgb(22, 22, 22)}table th, td{text-align: center}table tr{padding: 0px}td{padding: 4px}table th{font-size: 14px;background-color: rgb(26, 26, 26);border-top: 4px solid rgb(16, 16, 16);padding: 8px}table .tableName{font-size: 14px;background-color: rgb(24, 24, 24)}tr:nth-child(even){background-color: rgb(38, 38, 38)}tr:nth-child(odd){background-color: rgb(32, 32, 32)}">
+            <th><span><h1 id="classTitleName">If you are seeing this, reload the page</h1></span></th>
+          </table>
+
+        </div>
+        <table id="classTable" style="table{border-collapse: collapse;box-shadow: 4px 4px 8px rgb(22, 22, 22)}table th, td{text-align: center}table tr{padding: 0px}td{padding: 4px}table th{font-size: 14px;background-color: rgb(26, 26, 26);border-top: 4px solid rgb(16, 16, 16);padding: 8px}table .tableName{font-size: 14px;background-color: rgb(24, 24, 24)}tr:nth-child(even){background-color: rgb(38, 38, 38)}tr:nth-child(odd){background-color: rgb(32, 32, 32)}">
+
+        </table>
+        <div class="subclassListContainer">
+          <table id="subclassList" style="table{border-collapse: collapse;box-shadow: 4px 4px 8px rgb(22, 22, 22)}table th, td{text-align: center}table tr{padding: 0px}td{padding: 4px}table th{font-size: 14px;background-color: rgb(26, 26, 26);border-top: 4px solid rgb(16, 16, 16);padding: 8px}table .tableName{font-size: 14px;background-color: rgb(24, 24, 24)}tr:nth-child(even){background-color: rgb(38, 38, 38)}tr:nth-child(odd){background-color: rgb(32, 32, 32)}">
+
+          </table>
+          <div class="basicInfo">
+            <h3>Hit Points</h3>
+            <hr>
+            <p><strong>Hit Dice:</strong> d<span id="hitDie"></span></p>
+            <p><strong>Hit Points per Level:</strong> <span id="hpPerLvl"></span></p>
+            <h3>Multiclassing</h3>
+            <hr>
+            <p><strong>Ability Score Minimum:</strong> <span id="scoreMinimum"></span></p>
+            <p><strong>Other Requirements:</strong> <span id="otherRequirement"></span></p>
+          </div>
+        </div>
+
+        <div class="selection">
+          <table>
+            <colgroup>
+              <col style="width:20%;">
+              <col style="width:10%;">
+              <col style="width:15%;">
+              <col style="text-align: justify; a {display:inline-block;}">
+              <col class="endCol" style="display:none; width: 0;">
+            </colgroup>
+            <tr>
+              <th colspan="4">Rogue Class Boons</th>
+            </tr>
+            <tr>
+              <th onclick="sortTable(4)">Name</th>
+              <th onclick="sortTable(1)">Cost</th>
+              <th onclick="sortTable(2)">Type</th>
+              <th onclick="sortTable(3)">Prerequisites</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="selection" id="boonsList">
+
+          <table id="myTable">
+            <colgroup>
+              <col style="width:20%;">
+              <col style="width:10%;">
+              <col style="width:15%;">
+              <col style="text-align: justify; a {display:inline-block;}">
+              <col style="display:none; width: 0;">
+            </colgroup>
+            <tr></tr>
+          </table>
+        </div>
+
+        <div class="boons">
+          <h2 id="boonDisplayName">Loading... this may take some time...</h2>
+          <h3 id="boonDisplayType">Loading...</h3>
+          <p id="boonCost">Loading...</p>
+          <p id="boonDisplayPrerequisite">Loading...</p>
+          <p id="boonDisplayDescription" class="boonDisplayDescription">Loading...</p>
+        </div>
+
+        <div id="lvl1">
+
+        </div>
+        <div id="lvl2">
+
+        </div>
+        <div id="lvl3">
+
+        </div>
+        <div id="lvl4">
+
+        </div>
+        <div id="lvl5">
+
+        </div>
+        <div id="lvl6">
+
+        </div>
+        <div id="lvl7">
+
+        </div>
+        <div id="lvl8">
+
+        </div>
+        <div id="lvl9">
+
+        </div>
+        <div id="lvl10">
+
+        </div>
+        <div id="lvl11">
+
+        </div>
+        <div id="lvl12">
+
+        </div>
+        <div id="lvl13">
+
+        </div>
+        <div id="lvl14">
+
+        </div>
+        <div id="lvl15">
+
+        </div>
+        <div id="lvl16">
+
+        </div>
+        <div id="lvl17">
+
+        </div>
+        <div id="lvl18">
+
+        </div>
+        <div id="lvl19">
+        </div>
+        <div id="lvl20">
+
+        </div>
+      </div>
+    </div>
+    <script src="../js/classes.js"></script>
+    <script src="../js/classArray.js"></script>
+    <script src="rogue.js"></script>
+    <script src="../js/menu.js"></script>
+    <script type="text/javascript">
+    //On page load, insert associated classArray and go to linked (#) class feature
+      $(document).ready(function() {
+        classDisplay(8);
+        var hash = location.hash.replace("#", "");
+        document.getElementById(hash).scrollIntoView();
+      });
+    </script>
+  </body>
+</html>
