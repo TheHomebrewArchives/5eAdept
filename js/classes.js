@@ -109,6 +109,8 @@ function sortTable(n) {
     }
   }
 
+  boonDisplay(0);
+
   function fromUrlDisplay() {
     var hash = location.hash.replace("#", "");
     boonDisplay(hash);

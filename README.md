@@ -1,5 +1,16 @@
 # 5e: Adept
 
+### Version 0.16
+
+#### Features
+
+- Improved class CSS
+
+#### Content
+
+- The Cleric subclasses Arcana, Death, Destruction, Forge, Grave, Greed, Knowledge, Life, Light, Love, Luck, Nature, Order, Shadow, Tempest, Time, Travel, Trickery, Valor, and War were added
+- The Druid subclasses Dreams, Land, Moon, Shepard, and Spores were added
+
 ### Version 0.15
 
 #### Features

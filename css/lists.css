@@ -8,12 +8,13 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgb(37, 37, 37);
-  overflow-y: scroll;
 }
 
 
 .selection table {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .selection table .boonDisplayLink {
@@ -60,6 +61,8 @@ body {
   max-height: 400px;
   min-height: 100px;
   height: 200px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 }
 
 .GeneralBoon {
@@ -112,4 +115,10 @@ body {
 
 .boonDisplayDescription a {
   display: inline;
+}
+
+.boons {
+  background-color: rgb(27, 27, 27);
+  padding-top: 6px;
+  padding-bottom: 4px;
 }

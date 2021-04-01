@@ -22,8 +22,9 @@
 
 .classTitleName table {
   position: relative;
-  width: 100%;
+  width: 98%;
   align-self: right;
+  margin-top: 1%;
 }
 
 .classDropdown table td:hover {
@@ -54,12 +55,6 @@
   text-decoration: underline;
 }
 
-.classInfo li {
-  padding: 5px;
-  font-size: 14px;
-
-}
-
 .classInfo span {
   padding: 0;
   margin: 0;
@@ -82,15 +77,16 @@
 }
 
 .subclassListContainer {
-  width: 24%;
+  width: 22%;
   height: 20%;
-  margin-left: 1%;
+  margin: 0 1%;
   align-self: right;
 }
 
 .subclassListContainer #subclassList {
   height: 100%;
   width: 100%;
+  margin-left: 0;
 }
 
 .subclassListContainer #subclassList td {
@@ -110,6 +106,26 @@
 #classTable td {
   font-size: 12px;
   padding: 2px;
+}
+
+.selection {
+  margin: 1% 1% 0 1%;
+}
+
+.selection table {
+  margin-bottom: 0;
+}
+
+#boonsList {
+  margin-top: 0;
+}
+
+.boons {
+  width: 100%;
+}
+
+.classInfo table {
+  margin-left: 1%;
 }
 
 #lvl1, #lvl2, #lvl3, #lvl4, #lvl5, #lvl6, #lvl7, #lvl8, #lvl9, #lvl10, #lvl11, #lvl12, #lvl13, #lvl14, #lvl15, #lvl16, #lvl17, #lvl18, #lvl19, #lvl20 {

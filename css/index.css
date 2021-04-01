@@ -26,16 +26,17 @@ h3 {
 }
 
 hr {
-  margin: 0px 20px;
+  margin: 0px 1%;
 }
 
 p, h1, h2, h3, h4, li, caption {
-  padding: 6px 20px;
+  padding: 6px 1%;
 }
 
 .info {
   display: block;
   text-align: justify;
+  margin: 0;
   padding-top: 6px;
   padding-bottom: 4px;
   background-color: rgb(27, 27, 27);
@@ -84,8 +85,8 @@ td {
 
 table th {
   font-size: 14px;
-  background-color: rgb(26, 26, 26);
-  border-top: 4px solid rgb(16, 16, 16);
+  background-color: rgb(22, 22, 22);
+  border-top: 4px solid rgb(15, 15, 15);
   padding: 8px;
 }
 
