@@ -129,8 +129,12 @@ classBoon = [
 //Display Subclass
 
 function roguishArchetypeDisplay(x) {
-  document.getElementById("lvl3").innerHTML = roguishArchetypes[x].roguishArchetype;
-  document.getElementById("lvl9").innerHTML = roguishArchetypes[x].roguishArchetypeFeature1;
-  document.getElementById("lvl13").innerHTML = roguishArchetypes[x].roguishArchetypeFeature2;
-  document.getElementById("lvl17").innerHTML = roguishArchetypes[x].roguishArchetypeFeature3;
+  document.getElementById("lvl3").innerHTML = c1[8].lvl3;
+  document.getElementById("lvl9").innerHTML = c1[8].lvl9;
+  document.getElementById("lvl13").innerHTML = c1[8].lvl13;
+  document.getElementById("lvl17").innerHTML = c1[8].lvl17;
+  document.getElementById("lvl3").innerHTML += roguishArchetypes[x].roguishArchetype;
+  document.getElementById("lvl9").innerHTML += roguishArchetypes[x].roguishArchetypeFeature1;
+  document.getElementById("lvl13").innerHTML += roguishArchetypes[x].roguishArchetypeFeature2;
+  document.getElementById("lvl17").innerHTML += roguishArchetypes[x].roguishArchetypeFeature3;
 }

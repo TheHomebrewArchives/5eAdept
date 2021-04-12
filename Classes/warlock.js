@@ -115,8 +115,12 @@ classBoon = [
 //Display Subclass
 
 function patronDisplay(x) {
-  document.getElementById("lvl1").innerHTML = otherworldlyPatrons[x].otherworldlyPatron;
-  document.getElementById("lvl6").innerHTML = otherworldlyPatrons[x].otherworldlyPatronFeature1;
-  document.getElementById("lvl10").innerHTML = otherworldlyPatrons[x].otherworldlyPatronFeature2;
-  document.getElementById("lvl14").innerHTML = otherworldlyPatrons[x].otherworldlyPatronFeature3;
+  document.getElementById("lvl1").innerHTML = c1[10].lvl1;
+  document.getElementById("lvl6").innerHTML = c1[10].lvl6;
+  document.getElementById("lvl10").innerHTML = c1[10].lvl10;
+  document.getElementById("lvl14").innerHTML = c1[10].lvl14;
+  document.getElementById("lvl1").innerHTML += otherworldlyPatrons[x].otherworldlyPatron;
+  document.getElementById("lvl6").innerHTML += otherworldlyPatrons[x].otherworldlyPatronFeature1;
+  document.getElementById("lvl10").innerHTML += otherworldlyPatrons[x].otherworldlyPatronFeature2;
+  document.getElementById("lvl14").innerHTML += otherworldlyPatrons[x].otherworldlyPatronFeature3;
 }

@@ -135,8 +135,8 @@ function circleDisplay(x) {
   document.getElementById("lvl6").innerHTML = c1[3].lvl6;
   document.getElementById("lvl10").innerHTML = c1[3].lvl10;
   document.getElementById("lvl14").innerHTML = c1[3].lvl14;
-  document.getElementById("lvl2").innerHTML = druidCircles[x].druidCircle;
-  document.getElementById("lvl6").innerHTML = druidCircles[x].druidCircleFeature1;
-  document.getElementById("lvl10").innerHTML = druidCircles[x].druidCircleFeature2;
-  document.getElementById("lvl14").innerHTML = druidCircles[x].druidCircleFeature3;
+  document.getElementById("lvl2").innerHTML += druidCircles[x].druidCircle;
+  document.getElementById("lvl6").innerHTML += druidCircles[x].druidCircleFeature1;
+  document.getElementById("lvl10").innerHTML += druidCircles[x].druidCircleFeature2;
+  document.getElementById("lvl14").innerHTML += druidCircles[x].druidCircleFeature3;
 }

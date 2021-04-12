@@ -10,6 +10,10 @@ p, li {
   margin: 4px 2px;
 }
 
+strong {
+  font-size: 16px;
+}
+
 h1 {
   font-size: 26px;
   margin: 10px 2px;
@@ -33,6 +37,11 @@ p, h1, h2, h3, h4, li, caption {
   padding: 6px 1%;
 }
 
+ul, ol {
+  padding: 0 1% 0 3%;
+  margin: 0;
+}
+
 .info {
   display: block;
   text-align: justify;
@@ -47,10 +56,6 @@ p, h1, h2, h3, h4, li, caption {
   margin: 16px 22px;
 }
 
-.info p {
-  font-size: 16px;
-}
-
 .info a {
   color: rgb(247, 150, 165);
   text-decoration: none;
@@ -59,10 +64,6 @@ p, h1, h2, h3, h4, li, caption {
 .info a:hover {
   color: rgb(182, 108, 108);
   text-decoration: underline;
-}
-
-.info li {
-  padding: 5px;
 }
 
 table {

@@ -87,8 +87,12 @@ classBoon = [
 //Display Subclass
 
 function originDisplay(x) {
-  document.getElementById("lvl1").innerHTML = sorcerousOrigins[x].sorcerousOrigin;
-  document.getElementById("lvl6").innerHTML = sorcerousOrigins[x].sorcerousOriginFeature1;
-  document.getElementById("lvl14").innerHTML = sorcerousOrigins[x].sorcerousOriginFeature2;
-  document.getElementById("lvl18").innerHTML = sorcerousOrigins[x].sorcerousOriginFeature3;
+  document.getElementById("lvl1").innerHTML = c1[9].lvl1;
+  document.getElementById("lvl6").innerHTML = c1[9].lvl6;
+  document.getElementById("lvl14").innerHTML = c1[9].lvl14;
+  document.getElementById("lvl18").innerHTML = c1[9].lvl18;
+  document.getElementById("lvl1").innerHTML += sorcerousOrigins[x].sorcerousOrigin;
+  document.getElementById("lvl6").innerHTML += sorcerousOrigins[x].sorcerousOriginFeature1;
+  document.getElementById("lvl14").innerHTML += sorcerousOrigins[x].sorcerousOriginFeature2;
+  document.getElementById("lvl18").innerHTML += sorcerousOrigins[x].sorcerousOriginFeature3;
 }

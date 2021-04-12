@@ -1,5 +1,20 @@
 # 5e: Adept
 
+### Version 0.17
+
+#### Features
+
+- Improved boon linking
+
+#### Content
+
+- The parry combat maneuver, along with two new boons to go along with it, were added
+- The Bleed and Void damage types were added
+- Fixed many typos in boons
+- The Fighter subclasses Arcane Archer, Banneret, Battle Master, Cavalier, Champion, Eldritch Knight, and Samurai were added
+- The Monk subclasses Drunken Master, Elements, Kensei, Long Death, Lotus, Open Hand, Shadow, and Sun Soul were added
+- The Paladin subclasses Ancients, Conquest, Crown, Devotion, Glory, Redemption, and Vengeance were added
+
 ### Version 0.16
 
 #### Features

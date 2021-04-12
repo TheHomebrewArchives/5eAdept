@@ -101,8 +101,12 @@ classBoon = [
 //Display Subclass
 
 function rangerArchetypeDisplay(x) {
-  document.getElementById("lvl3").innerHTML = rangerArchetypes[x].rangerArchetype;
-  document.getElementById("lvl7").innerHTML = rangerArchetypes[x].rangerArchetypeFeature1;
-  document.getElementById("lvl11").innerHTML = rangerArchetypes[x].rangerArchetypeFeature2;
-  document.getElementById("lvl15").innerHTML = rangerArchetypes[x].rangerArchetypeFeature3;
+  document.getElementById("lvl3").innerHTML = c1[7].lvl3;
+  document.getElementById("lvl7").innerHTML = c1[7].lvl7;
+  document.getElementById("lvl11").innerHTML = c1[7].lvl11;
+  document.getElementById("lvl15").innerHTML = c1[7].lvl15;
+  document.getElementById("lvl3").innerHTML += rangerArchetypes[x].rangerArchetype;
+  document.getElementById("lvl7").innerHTML += rangerArchetypes[x].rangerArchetypeFeature1;
+  document.getElementById("lvl11").innerHTML += rangerArchetypes[x].rangerArchetypeFeature2;
+  document.getElementById("lvl15").innerHTML += rangerArchetypes[x].rangerArchetypeFeature3;
 }

@@ -61,7 +61,7 @@ function sortTable(n) {
     rows = table.rows;
     /* Loop through all table rows (except the
     first, which contains table headers): */
-    for (i = 1; i < (rows.length - 1); i++) {
+    for (i = 0; i < (rows.length - 1); i++) {
       // Start by saying there should be no switching:
       shouldSwitch = false;
       /* Get the two elements you want to compare,
@@ -102,8 +102,9 @@ function sortTable(n) {
   }
 
   function fromUrlDisplay() {
-    var hash = location.hash.replace("#", "");
+    var hash = 1 + parseInt("0" + location.hash.replace("#", ""));
     boonDisplay(hash);
+    console.log(hash);
   }
 
   fromUrlDisplay();

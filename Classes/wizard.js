@@ -136,8 +136,12 @@ classBoon = [
 //Display Subclass
 
 function arcaneTraditionDisplay(x) {
-  document.getElementById("lvl2").innerHTML = arcaneTraditions[x].arcaneTradition;
-  document.getElementById("lvl6").innerHTML = arcaneTraditions[x].arcaneTraditionFeature1;
-  document.getElementById("lvl10").innerHTML = arcaneTraditions[x].arcaneTraditionFeature2;
-  document.getElementById("lvl14").innerHTML = arcaneTraditions[x].arcaneTraditionFeature3;
+  document.getElementById("lvl2").innerHTML = c1[11].lvl2;
+  document.getElementById("lvl6").innerHTML = c1[11].lvl6;
+  document.getElementById("lvl10").innerHTML = c1[11].lvl10;
+  document.getElementById("lvl14").innerHTML = c1[11].lvl14;
+  document.getElementById("lvl2").innerHTML += arcaneTraditions[x].arcaneTradition;
+  document.getElementById("lvl6").innerHTML += arcaneTraditions[x].arcaneTraditionFeature1;
+  document.getElementById("lvl10").innerHTML += arcaneTraditions[x].arcaneTraditionFeature2;
+  document.getElementById("lvl14").innerHTML += arcaneTraditions[x].arcaneTraditionFeature3;
 }
